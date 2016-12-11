@@ -1,3 +1,6 @@
+//设置环境变量，以防系统没有添加预设值
+process.env.NODE_ENV=process.env.NODE_ENV||'development';
+
 var express = require('./config/express');
 
 var app = express();
